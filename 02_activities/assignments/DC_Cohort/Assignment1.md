@@ -108,6 +108,8 @@ Please do not pick the exact same tables that I have already diagrammed. For exa
 
 ***
 
+
+
 ## Section 2:
 You can start this section following *session 2*.
 
@@ -205,5 +207,5 @@ Consider, for example, concepts of fariness, inequality, social structures, marg
 
 
 ```
-Your thoughts...
+One random example that I can think about that might be embedded within something as small as sinks and paper towel machines is their ability to detect skin tones. This is something I notice almost every day in the office and why I am even very passionate about equity-oriented design because with a lot of tools in society they are designed based on white skin, so when people who have darker skin tones try to use these devices they end up not working for us. While this might seem like a small problem when it comes to sinks and paper towel machines but this problem cascades when we start to this about facial recognition devices, pulse oximeters, and other technologies and tools that have deep rooted algorithmic biases embedded within their databases. 
 ```
