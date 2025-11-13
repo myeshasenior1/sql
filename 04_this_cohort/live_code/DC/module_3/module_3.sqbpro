@@ -1,323 +1,391 @@
-<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/myeshasenior/Desktop/sql/05_src/sql/farmersmarket.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="7306"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/><expanded_item id="4" parent="1"/></tab_structure><tab_browse><table title="booth" custom_title="0" dock_id="4" table="4,5:mainbooth"/><dock_state state="000000ff00000000fd00000001000000020000048a0000035cfc0100000003fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000000000000000fb000000160064006f0063006b00420072006f00770073006500320100000000000005360000000000000000fb000000160064006f0063006b00420072006f007700730065003401000000000000048a0000010a00ffffff0000048a0000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="booth" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="104"/><column index="2" value="125"/><column index="3" value="300"/><column index="4" value="83"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="product" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort><column index="4" mode="0"/></sort><column_widths><column index="1" value="80"/><column index="2" value="206"/><column index="3" value="93"/><column index="4" value="145"/><column index="5" value="124"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="temp" name="new_vendor_inventory" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="91"/><column index="2" value="62"/><column index="3" value="73"/><column index="4" value="80"/><column index="5" value="98"/><column index="6" value="62"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="vendor_booth_assignments" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="74"/><column index="2" value="106"/><column index="3" value="92"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1*">/* MODULE 3 */
-/* COUNT */
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/myeshasenior/Desktop/sql/05_src/sql/farmersmarket.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="7306"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/><expanded_item id="4" parent="1"/></tab_structure><tab_browse><table title="customer_purchases" custom_title="0" dock_id="2" table="4,18:maincustomer_purchases"/><dock_state state="000000ff00000000fd00000001000000020000048a00000356fc0100000002fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000000000000000fc000000000000048a0000012000fffffffa000000000100000002fb000000160064006f0063006b00420072006f00770073006500320100000000ffffffff0000012000fffffffb000000180064006f0063006b00420072006f007700730065003100390000000000ffffffff00000000000000000000048a0000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="assignment1" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="300"/><column index="2" value="300"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="booth" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="104"/><column index="2" value="125"/><column index="3" value="300"/><column index="4" value="83"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="customer_purchases" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="80"/><column index="2" value="73"/><column index="3" value="91"/><column index="4" value="91"/><column index="5" value="62"/><column index="6" value="184"/><column index="7" value="119"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="market_date_info" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="91"/><column index="2" value="85"/><column index="3" value="95"/><column index="4" value="91"/><column index="5" value="130"/><column index="6" value="123"/><column index="7" value="99"/><column index="8" value="108"/><column index="9" value="127"/><column index="10" value="130"/><column index="11" value="120"/><column index="12" value="128"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 2*">/* MODULE 4 */
+/* NULL Management */
 
 
-/* 1. Count the number of products */
- SELECT count(product_id) as num_of_product
- FROM product;
+/* 1. IFNULL: Missing product_size, missing product_qty_type */ 
+SELECT *
+,ifnull(product_size, 'Unknown') as new_product_size
+--replace with another column
+,IFNULL(product_size,product_qty_type) as silly_replacement
+/* 2. Coalesce */
+,coalesce(product_size, product_qty_type, 'missing') as more_replacements --if the first value is null, then the second value is null then 'missing
+,coalesce(product_qty_type,product_size, 'missing') as more_replacements
 
- 
-/* 2. How many products per product_qty_type */
-SELECT product_qty_type, COUNT(product_id) as num_of_product
-FROM product
-GROUP BY product_qty_type
+,IFNULL(IFNULL(product_size, product_qty_type), 'missing') as equiv_replacements
 
+FROM product;
 
-/* 3. How many products per product_qty_type and per their product_size */
-SELECT product_size
-,product_qty_type
-, COUNT(product_id) as num_of_product
-FROM product
-GROUP BY product_size, product_qty_type
-
-ORDER BY product_qty_type;
-
-/* COUNT DISTINCT 
-    4. How many unique products were bought */
-SELECT COUNT(DISTINCT product_id) as bought_prods
-FROM customer_purchases
-
-</sql><sql name="SQL 10*">/* MODULE 3 */
-/* SUM &amp; AVG */
+/* 3. NULLIF
+finding values in the product_size column that are &quot;blank&quot; strings and setting them to NULL if they are blank */
+SELECT *
+--,IFNULL(product_size, 'Unknown')
+,coalesce(NULLIF(product_size,''), 'Unknown') replaced_values
 
 
-/* 1. How much did customers spend each (per) day */
-SELECT 
-market_date
-,customer_id
-,SUM(quantity*cost_to_customer_per_qty) as total_spend
+FROM product;
 
-FROM customer_purchases
-GROUP BY market_date
-,customer_id;
- 
+/* 4. NULLIF 
+filtering which rows are null or blank */
 
-/* 2. How much does each customer spend on average */
-SELECT
-customer_first_name
-,customer_last_name
-,ROUND(AVG(quantity*cost_to_customer_per_qty),2) as avg_spend
-
-FROM customer_purchases as cp
-INNER JOIN customer as c
-		ON c.customer_id = cp.customer_id
-		
-GROUP BY c.customer_id
-
-
-</sql><sql name="SQL 11*">/* MODULE 3 */
-/* MIN &amp; MAX */
-
-
-/* 1. What is the most expensive product 
-...pay attention to how it doesn't handle ties very well
-*/
- SELECT product_name, max(original_price) as most_expensive
- 
- FROM vendor_inventory as vi
- INNER JOIN product as p
-		ON p.product_id = vi.product_id;
-
-/* 2. Prove that max is working */
-SELECT DISTINCT
-product_name,
-original_price
-
- FROM vendor_inventory as vi
- INNER JOIN product as p
-		ON p.product_id = vi.product_id;
-
-
-
-/* 3. Find the minimum price per each product_qty_type */
-SELECT product_name
-,product_qty_type
-,min(original_price)
-
-FROM vendor_inventory as vi
-INNER JOIN product as p
-		ON p.product_id = vi.product_id
-		
-GROUP BY product_qty_type;
-
-
-/* 4. Prove that min is working */
-SELECT DISTINCT product_name
-,product_qty_type
----,min(original_price)
-,original_price
-
-FROM vendor_inventory as vi
-INNER JOIN product as p
-		ON p.product_id = vi.product_id;
-
-
-/* 5. Min/max on a string 
-... not particularly useful? */
-SELECT max(product_name)
+SELECT *
 FROM product
 
-</sql><sql name="SQL 12*">/* MODULE 3 */
-/* Arithmitic */
+WHERE NULLIF(product_size, '') IS NULL
 
+</sql><sql name="SQL 7">/* MODULE 4 */
+/* NULLIF Budget (example from the slides) */
 
-/* 1. power, pi(), ceiling, division, integer division, etc */
-SELECT  power(4,2), pi();
+/* The following example creates a budgets table to show a department (dept) 
+...its current budget (current_year) and its previous budget (previous_year). 
 
-SELECT 10.0 / 3.0 as division,
-CAST(10.0 as INT) / CAST(3.0 as INT) as integer_division;
+For the current year, NULL is used for departments with budgets that have not changed from the previous year, 
+and 0 is used for budgets that have not yet been determined. 
 
-/* 2. Every even vendor_id with modulo */
-SELECT * FROM vendor
-WHERE vendor_id % 2 = 0;
+To find out the average of only those departments that receive a budget and to include the budget value 
+from the previous year (use the previous_year value, where the current_year is NULL), 
+combine the NULLIF and COALESCE functions. */
 
-
-/* 3. What about every third?  */
-SELECT * FROM vendor
-WHERE vendor_id % 3 = 1
-</sql><sql name="SQL 13*">/* MODULE 3 */
-/* HAVING */
-
-
-/* 1. How much did a customer spend on each day?
-Filter to customer_id between 1 and 5 and total_cost &gt; 50 
-... What order of execution occurs?*/
- SELECT
- market_date
- ,customer_id
- , SUM(quantity*cost_to_customer_per_qty) as total_spend
- 
- FROM customer_purchases
- WHERE customer_id BETWEEN 1 AND 5
- 
- GROUP BY market_date, customer_id
- HAVING total_spend &gt; 50;
- 
-
-
-
-/* 2. How many products were bought?
-Filter to number of purchases between 300 and 500  */
-SELECT count(product_id) as num_of_prod, product_id
-FROM customer_purchases
-GROUP BY product_id
-HAVING count(product_id) BETWEEN 300 AND 500
-
-
-</sql><sql name="SQL 13*">/* MODULE 3 */
-/* Subquery FROM */
-
-
-/*1. Simple subquery in a FROM statement, e.g. for inflation
-...we could imagine joining this to a more complex query perhaps */
-SELECT DISTINCT
-product_id, inflation
-
-
-
-FROM (
-		SELECT product_id, cost_to_customer_per_qty,
-		CASE WHEN cost_to_customer_per_qty &lt;'1.00' THEN cost_to_customer_per_qty*5
-		ELSE cost_to_customer_per_qty END as inflation
-		
-		FROM customer_purchases
-
+DROP TABLE IF EXISTS temp.budgets; 
+CREATE TEMP TABLE IF NOT EXISTS temp.budgets (
+dept STRING
+,current_year INT
+,previous_year INT
 );
 
 
-
-/* 2. What is the single item that has been bought in the greatest quantity?*/
-SELECT product_name, MAX(quantity_purchased)
-
-FROM product as p
-INNER JOIN (
--- inner QUERY
-		SELECT product_id
-		,count(quantity) as quantity_purchased
-		
-		FROM customer_purchases
-		GROUP BY product_id
-
-)AS x ON p.product_id = x.product_id
-</sql><sql name="SQL 14*">/* MODULE 3 */
-/* Subquery WHERE */
+INSERT INTO temp.budgets VALUES 
+('software',1000,1000)
+, ('candles',NULL,500)
+, ('coffee', 400, 200)
+, ('pencils',0, 50);
 
 
-/* 1. How much did each customer spend at each vendor for each day at the market WHEN IT RAINS */
-
-SELECT
-market_date,
-customer_id,
-vendor_id,
-SUM(quantity*cost_to_customer_per_qty) as total_spend
-
-FROM customer_purchases
-
---filter by rain_flag
--- when it was raining
-WHERE market_date IN(
-
-		SELECT market_date
-		FROM market_date_info
-		WHERE market_rain_flag = 1
-
-)
+/*examine each of these columns */
+SELECT 
+NULLIF(current_year, previous_year)
+--,NULLIF(COALESCE(current_year, previous_year), 0.00)
+--,
+--AVG(NULLIF(COALESCE(current_year, previous_year), 0.00)) 
+FROM budgets
 
 
-GROUP BY market_date, vendor_id, customer_id;
+/* more NULLIF here: 
+https://learn.microsoft.com/en-us/sql/t-sql/language-elements/nullif-transact-sql?view=sql-server-ver17
+*/
+
+</sql><sql name="SQL 10*"> /* MODULE 4 */
+/* Windowed functions: row_number */
 
 
-/* 2. What is the name of the vendor who sells pie */
-SELECT  DISTINCT vendor_name
+/* 1. What product is the highest price per vendor */
+--outer QUERY
+SELECT x.*
+,product_name
 
-FROM customer_purchases as cp
-INNER JOIN vendor as v
-		ON cp. vendor_id = v.vendor_id
-
-WHERE product_id IN (
-
-			SELECT product_id
-			FROM product
-			WHERE product_name LIKE '%pie%'
-)
-</sql><sql name="SQL 16*">/* MODULE 3 */
-/* Temp Tables */
+--inner QUERY
 
 
-/* 1. Put our inflation query into a temp table, e.g. as temp.new_vendor_inventory*/
+FROM (
+		SELECT 
+		vendor_id
+		,product_id
+		,original_price
+		,market_date
+		,ROW_NUMBER() OVER (PARTITION BY vendor_id ORDER BY original_price DESC) as price_rank
+		-- if we add product_id we could potentially track the time where original_price changed
+		,ROW_Number() OVER(PARTITION BY vendor_id, product_id ORDER BY original_price DESC)
 
-/* some structural code */
-/* ...heads up, sometimes this query can be finnicky -- it's good to try highlighting different sections to help it succeed...*/
+		FROM vendor_inventory
+) x
+INNER JOIN product p
+		ON x.product_id = p.product_id
 
--- if a table named new_vendor_inventory exists, delete it, other do NOTHING
-DROP TABLE IF EXISTS temp.new_vendor_inventory;
-
---make the table
-CREATE TABLE temp.new_vendor_inventory AS
-
-
--- definition of the table
-SELECT *,
-original_price*5 as inflation
-FROM vendor_inventory;
+WHERE x.price_rank = 1;
 
 
 
 
-/* 2. put the previous table into another temp table, e.g. as temp.new_new_vendor_inventory  */
-DROP TABLE IF EXISTS temp.new_new_vendor_inventory;
-CREATE TABLE temp.new_new_vendor_inventory AS
+/* See how this varies from using max due to the group by  
+SELECT vendor_id,
+--product_id,
+MAX(original_price)
+
+FROM vendor_inventory
+GROUP BY vendor_id,product_id
+
+*/
+--highest single purchase in a day per customer
+SELECT *
+
+FROM(
+
+	SELECT 
+	customer_id
+	,product_id
+	,market_date
+	,quantity
+	,quantity*cost_to_customer_per_qty as cost
+	,row_number() OVER(PARTITION BY customer_id ORDER BY quantity*cost_to_customer_per_qty DESC) as sales_rank
+
+	FROM customer_purchases
+)x
+WHERE x.sales_rank = 1
+
+ORDER BY cost desc
+
+</sql><sql name="SQL 9*">/* MODULE 4 */
+/* Windowed functions: dense_rank, rank, row_number */
+
+
+/* 1. Compare dense_rank, rank, and row_number */
+
+DROP TABLE IF EXISTS TEMP.row_rank_dense;
+
+CREATE TEMP TABLE IF NOT EXISTS TEMP.row_rank_dense
+(
+emp_id INT,
+salary INT
+);
+
+INSERT INTO temp.row_rank_dense
+VALUES
+(1,200000),
+(2,200000),
+(3, 160000),
+(4, 120000),
+(5, 125000),
+(6, 165000),
+(7, 230000),
+(8, 100000),
+(9, 165000),
+(10, 100000),
+(11, 90000);
 
 SELECT *
-,inflation*2 as super_inflation
-FROM temp.new_vendor_inventory
+,row_number() OVER(ORDER BY salary DESC) as [row_number]
+,RANK() OVER(ORDER BY salary DESC) as [rank]
+,dense_rank() OVER(ORDER BY salary DESC) as [dense_rank]
 
-</sql><sql name="SQL 15*">/* MODULE 3 */
-/* Common Table Expression (CTE) */
+FROM row_rank_dense
 
-
-/* 1. Calculate sales per vendor per day */
-WITH vendor_daily_sales AS(
-		SELECT 
-		md.market_date
-		,market_day
-		,market_week
-		,market_year
-		,vendor_name
-		,SUM(quantity*cost_to_customer_per_qty) as sales
+</sql><sql name="SQL 8*">/* MODULE 4 */
+/* Windowed functions: NTILE */
 
 
-		FROM customer_purchases cp
-		INNER JOIN vendor v----- we want the vendor_name
-				ON v.vendor_id = cp.vendor_id
-		INNER JOIN market_date_info md
-				ON cp.market_date = md. market_date
-				
-		GROUP BY md.market_date, v.vendor_id
+/* 1. Calculate quartile, quintiles, and percentiles from vendor daily sales */
+SELECT *
+,ntile(4) OVER(PARTITION BY vendor_name ORDER BY sales ASC) as [quartile]
+,ntile(5) OVER(PARTITION BY vendor_name ORDER BY sales ASC) as [quintile]
+,ntile(100) OVER(PARTITION BY vendor_name ORDER BY sales ASC) as [percentile]
 
+FROM(
+-- vendor daily sales 
+	SELECT 
+	md.market_date
+	,market_day
+	,market_week
+	,market_year
+	,vendor_name
+	,SUM(quantity*cost_to_customer_per_qty) AS sales
+
+	FROM customer_purchases AS cp
+	JOIN market_date_info AS md
+		ON cp.market_date = md.market_date
+	JOIN vendor AS v
+		ON v.vendor_id = cp.vendor_id
+		
+	GROUP BY cp.market_date, v.vendor_id
+	) x</sql><sql name="SQL 11*">/* MODULE 4 */
+/* String Manipulations */
+
+
+/* 1. ltrim, rtrim, trim*/
+SELECT
+ltrim('                 THOMAS ROSENTHAL            ') as [ltrim]
+, rtrim('                 THOMAS ROSENTHAL            ') as [rtrim]
+,trim('                 THOMAS ROSENTHAL            ') as [trim]
+,ltrim(RTRIM('                THOMAS ROSENTHAL         ')) as [both]
+
+/* 2. replace*/
+,replace('THOMAS ROSENTHAL', ' ',' WILLIAM ') as full_name --adding middle name between first and last name
+,replace('THOMAS ROSENTHAL', 'A', 'E') as a_to_e
+,replace('THOMAS ROSENTHAL', 'A', '') as no_a
+,replace(customer_first_name, 'a', 'e') as cust_a_to_e
+,replace(customer_first_name, 'a', customer_last_name) as chaos
+
+
+/* 3. upper, lower*/
+,UPPER(customer_first_name) as [upper]
+
+
+/* 4. concat with || */
+,customer_first_name || ' ' || customer_last_name as customer_name
+,LOWER(customer_first_name) || ' ' || UPPER(customer_last_name) || '' || customer_postal_code as cust_deets
+
+FROM customer;
+
+/* 5. substr */
+SELECT DISTINCT
+customer_last_name
+,substr(customer_last_name,4) as [4] -- any length from the 4th character
+,substr(customer_last_name, 4,2) as [4,2]
+,substr(customer_last_name, -5, 4) as [count_right] -- counting from the right
+
+
+/* 6. length */
+,length(customer_last_name) as len
+/* 7. unicode, char */
+,'THOMAS  
+
+ROSENTHAL' as bad_space_name
+
+,replace('THOMAS  
+
+
+ROSENTHAL', char(10), ' ') as better_linebreak -- remove all instances of the line break from the string
+
+FROM customer
+/* 8. REGEXP in a WHERE statement */
+
+WHERE customer_last_name REGEXP'(a)$' ---filtering to cust last name ending in a</sql><sql name="SQL 12">/* MODULE 4 */
+/* Substring &amp; instring together */
+
+
+/* think of this as a comma delimiter ... but it's a bit silly ... do this in python/R instead unless you have to */
+
+SELECT 
+'FirstWord, SecondWord, ThirdWord',
+ SUBSTR('FirstWord, SecondWord, ThirdWord',0, INSTR('FirstWord, SecondWord, ThirdWord',',')) as FirstDelim
+ --,SUBSTR('FirstWord, SecondWord, ThirdWord',0, 10) as FirstDelim -- same thing but not dynamic
+ ,SUBSTR('FirstWord, SecondWord, ThirdWord', 
+  INSTR('FirstWord, SecondWord, ThirdWord',',')+1,
+  INSTR('FirstWord, SecondWord, ThirdWord',',')+1) as SecondDelim
+  
+  ,SUBSTR('FirstWord, SecondWord, ThirdWord',
+  INSTR(
+    (SUBSTR('FirstWord, SecondWord, ThirdWord',
+    INSTR('FirstWord, SecondWord, ThirdWord',',')+1))
+  ,',') + 
+  INSTR('FirstWord, SecondWord, ThirdWord',',')+1) AS ThirdDelim
+</sql><sql name="SQL 33*">/* MODULE 4 */
+/* UNION */
+
+/* 1. Find the most and least expensive product by vendor with UNION (and row_number!) */
+
+SELECT vendor_id, product_id, original_price, rn_max as [row_number]
+FROM (
+
+	SELECT
+	vendor_id,
+	product_id,
+	original_price,
+	ROW_NUMBER() OVER(PARTITION BY vendor_id ORDER BY original_price DESC) as rn_max
+	
+	FROM vendor_inventory
 )
+WHERE rn_max = 1
+
+UNION --union returned 5 rows....union all returned 6 rows (vendor #4 was duplicated)
+
+SELECT vendor_id, product_id, original_price, rn_min
+FROM (
+
+	SELECT
+	vendor_id,
+	product_id,
+	original_price,
+	ROW_NUMBER() OVER(PARTITION BY vendor_id ORDER BY original_price ASC) as rn_min
+	
+	FROM vendor_inventory
+)
+WHERE rn_min = 1</sql><sql name="SQL 52*">/* MODULE 4 */
+/* UNION */
+
+/* 1. Emulate a FULL OUTER JOIN with a UNION */
+DROP TABLE IF EXISTS temp.store1; 
+CREATE TEMP TABLE IF NOT EXISTS temp.store1
+(
+costume TEXT,
+quantity INT
+);
+
+INSERT INTO temp.store1
+VALUES(&quot;tiger&quot;,6),
+        (&quot;elephant&quot;,2),
+        (&quot;princess&quot;, 4);
 
 
+DROP TABLE IF EXISTS temp.store2;
+CREATE TEMP TABLE IF NOT EXISTS temp.store2
+(
+costume TEXT,
+quantity INT
+);
 
-/* ... re-aggregate the daily sales for each WEEK instead now  */
-SELECT 
-market_year
-,market_week
-,vendor_name
-,SUM(sales) as sales
+INSERT INTO temp.store2
+VALUES(&quot;tiger&quot;,2),
+	(&quot;dancer&quot;,7),
+	(&quot;superhero&quot;, 5);
+	
+	
+SELECT s1.costume, s1.quantity as store1_quantity, s2.quantity as store2_quantity
+FROM store1 s1
+LEFT JOIN store2 s2
+		ON s1.costume =s2.costume
+		
+UNION ALL
 
-FROM vendor_daily_sales
-GROUP BY market_year, market_week, vendor_name
+SELECT s2.costume, s1.quantity, s2.quantity
+FROM store2 s2
+LEFT JOIN store1 s1
+		ON s1.costume =s2.costume
+		
+WHERE s1.costume IS NULL
 
-</sql><sql name="SQL 18">/* MODULE 3 */
-/* Date functions */
+ORDER BY s1.quantity DESC, s2.quantity</sql><sql name="SQL 53*">/* MODULE 4 */
+/* INTERSECT &amp; EXCEPT */
+
+/* 1. Find products that have been sold (e.g. are in customer purchases AND product) */ 
+SELECT product_id
+FROM customer_purchases
+INTERSECT 
+SELECT product_id
+FROM product;
+
+/* 2. Find products that have NOT been sold (e.g. are NOT in customer purchases even though in product) */
+SELECT x.product_id, product_name
+FROM (
+
+SELECT product_id
+FROM product
+EXCEPT 
+SELECT product_id
+FROM customer_purchases
+)x
+JOIN product p on x.product_id = p.product_id;
+
+/* 3. Directions matter... if we switch the order here:
+products that do not exist, because no products purchased are NOT in the product table (e.g. are NOT in product even though in customer purchases)*/
+
+--returning 0 rows
+SELECT product_id
+FROM customer_purchases
+EXCEPT
+SELECT product_id
+FROM product;
 
 
-/* 1. now */
-SELECT 
+/* 4. We can remake the intersect with a WHERE subquery for more details ...  */
 
 
-/* 2. strftime */
-
-
-
-/* 3. adding dates, e.g. last date of the month */
-
-
-
-/* 4. difference between dates, 
- a. number of days between now and each market_date
- b. number of YEARS between now and market_date
- c. number of HOURS bewtween now and market_date
- */
-</sql><current_tab id="8"/></tab_sql></sqlb_project>
+SELECT * 
+FROM product
+WHERE product_id IN
+	(
+	SELECT product_id 
+	FROM customer_purchases
+	INTERSECT
+	SELECT product_id
+	FROM product
+	)
+</sql><current_tab id="9"/></tab_sql></sqlb_project>
