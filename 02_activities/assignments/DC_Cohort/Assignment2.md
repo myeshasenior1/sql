@@ -54,7 +54,7 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+Architecture Type 1: Would be the one that overwrites the changes so this would be the customer_address table that when it is updated changes are overwriten with no history. Achitecture Type 2: Would be the retains and preserves full history of changes so this would be the one that keep tracks of the change history. For this one, it would be important to add a row that tracks the changes by keeping track of the date when changes were made or implemented.
 ```
 
 ***
